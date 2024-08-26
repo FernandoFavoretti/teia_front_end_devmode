@@ -1,0 +1,48 @@
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--color-white);
+  border-radius: 4px;
+  width: 230px;
+  height: 580px;
+  box-shadow: 2px 5px 10px rgba(214, 214, 214, 0.5);
+  padding: 30px 30px 30px 30px;
+  border: 1px solid var(--color-grey-8);
+}
+
+.logoImg {
+  width: 300px;
+}
+
+.divMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 300px;
+  width: 100%;
+}
+
+.menuImg {
+  width: 20px;
+}
+
+button {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 25px 15px 15px;
+  border-radius: 4px;
+  color: var(--color-grey-4);
+  font-weight: 700px;
+  font-size: var(--font-size-7);
+}
+
+hr {
+  border: none;
+  border-top: 2px solid var(--color-grey-7);
+  box-shadow: 5px 5px 10px rgba(214, 214, 214, 0.5);
+  margin-bottom: 4px;
+}

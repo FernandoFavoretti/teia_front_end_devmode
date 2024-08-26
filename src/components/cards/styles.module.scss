@@ -1,0 +1,146 @@
+/* Card */
+
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: transparent;
+  background-color: var(--color-white);
+  border-radius: 8px;
+  width: 300px;
+  height: 410px;
+  border: 1px solid var(--color-grey-8);
+  box-shadow: 5px 5px 10px rgba(214, 214, 214, 0.5);
+}
+
+.headerCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--color-brand-3);
+  border-radius: 4px 4px 0px 0px;
+  padding: 10px 0px 10px 0px;
+  height: 140px;
+}
+
+.headerCardImg {
+  width: 22px;
+  height: 23px;
+  margin-left: 15px;
+}
+
+h5 {
+  margin-left: 10px;
+  color: var(--color-white);
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: var(--font-size-6);
+  margin-left: 20px;
+  color: var(--color-white);
+}
+span {
+  font-size: var(--font-size-9);
+  margin-left: 20px;
+  color: var(--color-white);
+}
+
+.titleDiv {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-brand-5);
+  border-radius: 0px 4px 4px 0px;
+  width: 80%;
+  height: 42px;
+}
+
+.visibilityTagDiv {
+  display: flex;
+  align-items: center;
+  gap: 110px;
+}
+
+.contentCard {
+  height: 230px;
+  padding: 10px 18px 10px 18px;
+}
+
+.divText {
+  height: 100%;
+  font-size: var(--font-size-7);
+  line-height: 22px; /* 
+  overflow: auto;
+  scrollbar-width: thin;
+  scroll-padding-left: 1px; */
+}
+
+/* .divText::-webkit-scrollbar-thumb {
+  background: greenyellow;
+  border-radius: 4px;
+}
+ */
+p {
+  font-size: var(--font-size-8);
+  color: var(--color-grey-4);
+}
+
+hr {
+  border-top: 2px solid var(--color-grey-7);
+  box-shadow: 5px 5px 10px rgba(214, 214, 214, 0.5);
+}
+
+.footCard {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 5px 10px 5px 10px;
+}
+
+.printEditDiv {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+}
+
+.trashDiv {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 20%;
+}
+
+.menuImg {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin-left: 22px;
+}
+
+/* Select Card */
+
+.headerCardSelect {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-brand-3);
+  padding: 10px 0px 10px 0px;
+  height: 100px;
+}
+
+.contentCardSelect {
+  height: 250px;
+  padding: 10px 18px 10px 18px;
+}
+
+.footCardSelect {
+  height: 70px;
+  padding: 0px 22px 0px 22px;
+  display: flex;
+  font-size: var(--font-size-8);
+  color: var(--color-grey-6);
+}
+
+label {
+  margin-left: 10px;
+}

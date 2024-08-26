@@ -1,0 +1,19 @@
+label {
+  font-size: var(--font-size-8);
+  color: var(--color-grey-4);
+}
+
+.input {
+  display: flex;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  background-color: var(--color-white);
+  padding: 15px;
+  width: 245px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid var(--color-grey-6);
+}
+input {
+  outline: none;
+}
