@@ -1,0 +1,77 @@
+.fade {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 70%;
+}
+
+.bodyDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 90px;
+  border-radius: 8px;
+  width: 900px;
+  height: 550px;
+  background-color: var(--color-white);
+}
+
+.blueDiv {
+  height: 150px;
+  width: 100%;
+  border-radius: 6px 6px 0px 0px;
+  background-color: var(--color-brand-3);
+}
+
+.contentDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 160px;
+  height: 400px;
+  width: 400px;
+
+  img {
+    width: 170px;
+  }
+}
+
+label {
+  font-size: var(--font-size-8);
+  color: var(--color-grey-4);
+}
+
+.input {
+  display: flex;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  background-color: var(--color-white);
+  padding: 15px;
+  width: 275px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid var(--color-grey-6);
+}
+input {
+  outline: none;
+}
+
+.buttonsDiv {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 100px;
+  padding: 20px;
+  justify-content: space-between;
+
+  img {
+    width: 15px;
+  }
+}
