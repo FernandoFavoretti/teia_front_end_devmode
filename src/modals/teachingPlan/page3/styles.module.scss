@@ -1,0 +1,235 @@
+.fade {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 70%;
+}
+
+.bodyDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  gap: 30px;
+  top: 15px;
+  border-radius: 8px;
+  width: 95%;
+  height: 98vh;
+  padding: 30px 40px;
+  background-color: var(--color-white);
+}
+
+.headerMain {
+  display: flex;
+  top: 0px;
+  background-color: var(--color-white);
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+
+  .image3 {
+    margin-left: 70px;
+    width: 340px;
+  }
+}
+
+.buttonsHeaderDiv {
+  display: flex;
+  gap: 10px;
+}
+
+.contentMainDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 8px 8px 0px 0px;
+  padding: 30px;
+  height: 85vh;
+  background-color: var(--color-grey-8);
+}
+
+.h2 {
+  font-size: var(--font-size-4);
+  color: var(--color-brand-3);
+}
+
+.myClassDiv {
+  width: 65%;
+  overflow: auto;
+  scrollbar-width: thin;
+}
+
+.contentClassSection {
+  width: 100%;
+  height: 78vh;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid var(--color-grey-6);
+  background-color: var(--color-white);
+}
+
+.classCardModel {
+  width: 100%;
+  height: 550px;
+  border-radius: 8px;
+}
+
+.blueDiv {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-brand-3);
+  width: 100%;
+  height: 80px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.synthesisDataDiv {
+  width: 33%;
+  height: 78vh;
+}
+
+.titleDiv {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-brand-5);
+  border-radius: 0px 4px 4px 0px;
+  width: 80%;
+  height: 42px;
+
+  h5 {
+    margin-left: 8px;
+    color: var(--color-white);
+  }
+}
+
+.headerCardImg {
+  width: 16px;
+  height: 17px;
+  margin-left: 15px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  gap: 35px;
+  margin-top: 20px;
+  margin-left: 30px;
+
+  .labelFilter {
+    font-size: var(--font-size-8);
+    margin-top: 30px;
+    color: var(--color-grey-5);
+  }
+}
+.select {
+  margin-top: 6px;
+  outline: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid var(--color-grey-5);
+  background-color: var(--color-white);
+  color: var(--color-grey-4);
+  cursor: pointer;
+}
+
+.labelSelect {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: var(--font-size-8);
+  color: var(--color-grey-5);
+}
+
+.labelImg {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  img {
+    width: 15px;
+  }
+}
+
+hr {
+  margin: 20px;
+}
+
+.classTextDiv {
+  margin: 20px 30px;
+  min-height: 265px;
+  max-height: 265px;
+  border-radius: 4px;
+  overflow: auto;
+  padding: 20px;
+  scrollbar-width: thin;
+  background-color: var(--color-white);
+
+  h3 {
+    font-size: var(--font-size-6);
+    color: var(--color-grey-4);
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: var(--font-size-7);
+    color: var(--color-grey-4);
+    line-height: 20px;
+  }
+}
+
+.trashButtonsDiv {
+  width: 98%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trashDiv {
+  padding: 0px 20px;
+  width: 65%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  img {
+    width: 22px;
+    opacity: 70%;
+  }
+}
+
+.buttonsDiv {
+  display: flex;
+  gap: 10px;
+  padding: 0px 20px;
+  width: 35%;
+  height: 35px;
+}
+
+.synthesisDataDiv {
+  padding: 20px;
+
+  .label {
+    color: var(--color-grey-4);
+    font-size: var(--font-size-7);
+  }
+}
+
+.synthesis {
+  padding: 20px;
+  border: 1px solid var(--color-grey-4);
+  margin-top: 10px;
+  border-radius: 8px;
+  width: 100%;
+  height: 300px;
+  background-color: var(--color-white);
+
+  .imgSynthesis {
+    width: 340px;
+  }
+}

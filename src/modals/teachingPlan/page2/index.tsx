@@ -1,7 +1,16 @@
 import styles from "../page2/styles.module.scss";
 import image2 from "../../../assets/images/teachingPlan/image2.png";
 import headerCardImg from "../../../assets/images/icons/white/idea.png";
-import { ButtonNext } from "../../../components/buttons";
+import {
+  ButtonDownComplexity,
+  ButtonNext,
+  ButtonUpComplexity,
+  ButtonUpload,
+} from "../../../components/buttons";
+import {
+  CardsNewsTeachingForestPlan,
+  CardsNewsTeachingRebecaPlan,
+} from "../../../components/cards";
 
 export const TeachingPlanModal2 = () => {
   return (
@@ -10,7 +19,7 @@ export const TeachingPlanModal2 = () => {
       <div className={styles.bodyDiv}>
         <div className={styles.mainDiv}>
           <div className={styles.headerMain}>
-            <h2>Novo plano de aula</h2>
+            <h2 className={styles.h2}>Novo plano de aula</h2>
             <img src={image2} className={styles.image2} alt="" />
             <ButtonNext />
           </div>
@@ -21,10 +30,63 @@ export const TeachingPlanModal2 = () => {
                 src={headerCardImg}
                 alt=""
               />
-              <h5>Objetivo de aprendizagem</h5>
+              <h5>Selecionar fontes:</h5>
+            </div>
+
+            <div className={styles.checkBoxDiv}>
+              <div className={styles.inputLabel}>
+                <input type="checkbox" name="" id="" />
+                <label className={styles.checkBoxLabel} htmlFor="">
+                  Sites
+                </label>
+              </div>
+              <div className={styles.inputLabel}>
+                <input type="checkbox" name="" id="" />
+                <label className={styles.checkBoxLabel} htmlFor="">
+                  Notícias
+                </label>
+              </div>
+              <div className={styles.inputLabel}>
+                <input type="checkbox" name="" id="" />
+                <label className={styles.checkBoxLabel} htmlFor="">
+                  Vídeos
+                </label>
+              </div>
+              <div className={styles.inputLabel}>
+                <input type="checkbox" name="" id="" />
+                <label className={styles.checkBoxLabel} htmlFor="">
+                  Filmes
+                </label>
+              </div>
+              <div className={styles.inputLabel}>
+                <input type="checkbox" name="" id="" />
+                <label className={styles.checkBoxLabel} htmlFor="">
+                  Tirinhas
+                </label>
+              </div>
             </div>
             <hr />
-            <div className={styles.inputsDiv}></div>
+            <div className={styles.uploadDiv}>
+              <label htmlFor="">Carregar conteúdo próprio: </label>
+              <ButtonUpload />
+            </div>
+            <hr />
+            <div className={styles.divCards}>
+              <div className={styles.cardsButton}>
+                <CardsNewsTeachingForestPlan />
+                <div className={styles.buttons}>
+                  <ButtonUpComplexity />
+                  <ButtonDownComplexity />
+                </div>
+              </div>
+              <div className={styles.cardsButton}>
+                <CardsNewsTeachingRebecaPlan />
+                <div className={styles.buttons}>
+                  <ButtonUpComplexity />
+                  <ButtonDownComplexity />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

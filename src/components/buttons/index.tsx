@@ -19,7 +19,7 @@ export const ButtonOrangeLandingPage = () => {
 };
 
 export const ButtonWhiteLandingPage = () => {
-  return <button className={styles.buttonWhiteLp}>Junte-se a nós</button>;
+  return <button className={styles.buttonWhiteLp}>Comece agora!</button>;
 };
 
 /* Login */

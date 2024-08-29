@@ -4,6 +4,9 @@ import editImage from "../../assets/images/icons/grey/edit.png";
 import deleteImage from "../../assets/images/icons/grey/trash.png";
 import headerCardImg from "../../assets/images/icons/white/idea.png";
 import visibilityImg from "../../assets/images/icons/white/visibility.png";
+import visibilityImgGrey from "../../assets/images/icons/grey/visibility.png";
+import forestImg from "../../assets/images/cards/amazonia-photo.png";
+import rebecaImg from "../../assets/images/cards/rebeca-andrade.png";
 
 export const CardsClass = () => {
   return (
@@ -49,7 +52,7 @@ export const CardsClass = () => {
 export const CardsSelectClass = () => {
   return (
     <header>
-      <div className={styles.mainDiv}>
+      <div className={styles.mainDivSelect}>
         <div className={styles.headerCardSelect}>
           <div className={styles.titleDiv}>
             <img className={styles.headerCardImg} src={headerCardImg} alt="" />
@@ -71,7 +74,68 @@ export const CardsSelectClass = () => {
         <div className={styles.footCardSelect}>
           <div className={styles.printEditDiv}>
             <input type="checkbox" name="Select Class" id="" />
-            <label htmlFor="">Selecionar aula como contexto</label>
+            <label className={styles.contextLabel} htmlFor="">
+              Selecionar aula como contexto
+            </label>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export const CardsNewsTeachingForestPlan = () => {
+  return (
+    <header>
+      <div className={styles.mainTeachinPlanDiv}>
+        <div className={styles.contentDiv}>
+          <img className={styles.newsImg} src={forestImg} alt="" />
+          <div className={styles.cardsTextNews}>
+            <h1>
+              Desmatamento em áreas protegidas na Amazônia, como terras
+              indígenas, tem a menor taxa em 9 anos, aponta imazon
+            </h1>
+            <p>
+              Em 2023 foram derrubados 386km² de florestas em terras indígenas e
+              unidades de conservação, área que equivale ao tamanho de Belo
+              Horizonte
+            </p>
+          </div>
+          <div className={styles.visibilityIcon}>
+            <img
+              className={styles.visibilityImg}
+              src={visibilityImgGrey}
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export const CardsNewsTeachingRebecaPlan = () => {
+  return (
+    <header>
+      <div className={styles.mainTeachinPlanDiv}>
+        <div className={styles.contentDiv}>
+          <img className={styles.newsImg} src={rebecaImg} alt="" />
+          <div className={styles.cardsTextNews}>
+            <h1>
+              Em disputa forte com Biles, Rebeca Andrade ganha prata no
+              individual geral em Paris
+            </h1>
+            <p>
+              A brasileira conquistou a segunda medalha consecutiva na prova, a
+              quarta nas olimpíadas
+            </p>
+          </div>
+          <div className={styles.visibilityIcon}>
+            <img
+              className={styles.visibilityImg}
+              src={visibilityImgGrey}
+              alt=""
+            />
           </div>
         </div>
       </div>

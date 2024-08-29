@@ -1,0 +1,47 @@
+.divBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 93vh;
+  background-color: var(--color-white);
+  margin-top: 10px;
+}
+
+.divMain {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 97%;
+  height: 95vh;
+}
+
+.classesDiv {
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+  gap: 30px;
+  border-radius: 4px;
+  padding: 30px;
+  height: 97vh;
+  background-color: var(--color-grey-8);
+}
+
+.renderClassDiv {
+  overflow: auto;
+  scrollbar-width: thin;
+  height: 95vh;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 50px;
+  gap: 30px;
+  flex-wrap: wrap;
+  background-color: var(--color-white);
+  border-radius: 4px;
+
+  img {
+    width: 577px;
+    height: 724px;
+  }
+}

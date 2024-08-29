@@ -2,7 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: transparent;
+  background-color: var(--color-white);
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
   height: 80px;
   box-shadow: 5px 5px 10px rgba(181, 177, 177, 0.5);
 }

@@ -4,13 +4,21 @@
 /* import { MyClassesPage } from "./pages/my-classes"; */
 /* import { ProfilePage } from "./pages/profile"; */
 /* import { TeachingPlanModal1 } from "./modals/teachingPlan/page1"; */
-import { TeachingPlanModal2 } from "./modals/teachingPlan/page2";
+/* import { TeachingPlanModal2 } from "./modals/teachingPlan/page2"; */
+/* import { TeachingPlanModal3 } from "./modals/teachingPlan/page3"; */
+/* import { SelectContextPage } from "./modals/teachingPlan/selectContextPage"; */
+import { LandingPage } from "./pages/landingpage";
+/* import { RenderClassPage } from "./pages/renderClassPage"; */
 import "./styles/index.scss";
 
 function App() {
   return (
     <>
-      <TeachingPlanModal2 />
+      <LandingPage />
+      {/* <RenderClassPage /> */}
+      {/* <SelectContextPage /> */}
+      {/* <TeachingPlanModal3 /> */}
+      {/* <TeachingPlanModal2 /> */}
       {/* <TeachingPlanModal1 /> */}
       {/* <EditProfileModal /> */}
       {/* <MyClassesPage /> */}
