@@ -4,8 +4,11 @@ import beginningImage from "../../assets/images/icons/orange/beginning.png";
 import myClassesImage from "../../assets/images/icons/orange/my-classes.png";
 import profileImage from "../../assets/images/icons/orange/profile.png";
 import settingsImage from "../../assets/images/icons/orange/settings.png";
+import { iUserProviderProps } from "../header";
+import { useNavigate } from "react-router-dom";
 
-export const SideMenu = () => {
+export const SideMenu = ({}: iUserProviderProps) => {
+  const navigate = useNavigate();
   return (
     <header>
       <div className={styles.mainDiv}>
@@ -13,14 +16,20 @@ export const SideMenu = () => {
         <div className={styles.divMenu}>
           <ul>
             <li>
-              <button className={styles.buttonsMenu}>
+              <button
+                className={styles.buttonsMenu}
+                onClick={() => navigate("/profile")}
+              >
                 <img src={profileImage} alt="" className={styles.menuImg} />{" "}
                 Perfil
               </button>
             </li>
             <hr />
             <li>
-              <button className={styles.buttonsMenu}>
+              <button
+                className={styles.buttonsMenu}
+                onClick={() => navigate("/class")}
+              >
                 <img src={myClassesImage} alt="" className={styles.menuImg} />
                 Minhas aulas
               </button>
@@ -34,7 +43,10 @@ export const SideMenu = () => {
             </li>
             <hr />
             <li>
-              <button className={styles.buttonsMenu}>
+              <button
+                className={styles.buttonsMenu}
+                onClick={() => navigate("/")}
+              >
                 <img src={beginningImage} alt="" className={styles.menuImg} />{" "}
                 Início
               </button>

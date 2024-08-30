@@ -59,6 +59,14 @@ h5 {
   display: flex;
   align-items: center;
   gap: 110px;
+
+  .buttonVisibility {
+    margin: 0px;
+    padding: 0px;
+    margin: 0px;
+    background: none;
+    box-shadow: none;
+  }
 }
 
 .contentCard {

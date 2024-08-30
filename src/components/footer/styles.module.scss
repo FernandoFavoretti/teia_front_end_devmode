@@ -1,0 +1,15 @@
+.divBody {
+  display: flex;
+  width: 100%;
+  background-color: var(--color-brand-2);
+  height: 180px;
+}
+
+.divMain {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: var(--color-brand-4);
+}

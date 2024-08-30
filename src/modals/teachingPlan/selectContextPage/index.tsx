@@ -55,7 +55,7 @@ export const SelectContextPage = () => {
           </div>
           <div className={styles.buttonsDiv}>
             <ButtonOrangeCancel />
-            <ButtonCyanCheck />
+            <ButtonCyanCheck children={undefined} />
           </div>
         </div>
       </div>

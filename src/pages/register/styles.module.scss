@@ -30,16 +30,16 @@
   height: 45%;
   line-height: 45px;
   padding: 50px;
-}
 
-h1 {
-  font-size: var(--font-size-1);
-  color: var(--color-highlight-2);
-}
+  h1 {
+    font-size: var(--font-size-1);
+    color: var(--color-highlight-2);
+  }
 
-h2 {
-  font-size: var(--font-size-2);
-  color: var(--color-brand-2);
+  h2 {
+    font-size: var(--font-size-2);
+    color: var(--color-brand-2);
+  }
 }
 
 .formDiv {
@@ -69,12 +69,19 @@ h2 {
   border-radius: 4px;
   padding: 30px 35px;
   background-color: var(--color-grey-8);
-}
 
-h3 {
-  font-size: var(--font-size-3);
-  color: var(--color-brand-3);
-  margin: 0;
+  h3 {
+    font-size: var(--font-size-3);
+    color: var(--color-brand-3);
+    margin: 0px;
+  }
+}
+.registerSpan {
+  font-size: var(--font-size-8);
+  color: var(--color-secondary-1);
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .buttonsDiv {
@@ -86,19 +93,8 @@ h3 {
   margin-top: 10px;
 }
 
-span {
-  font-size: var(--font-size-8);
-  color: var(--color-secondary-1);
-  text-align: center;
-}
-
 .beginMargin {
   margin-bottom: 10px;
-}
-
-.sideSpan {
-  margin-bottom: 20px;
-  text-align: left;
 }
 
 .accountDiv {

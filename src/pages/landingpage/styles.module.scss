@@ -1,9 +1,9 @@
 .divBody {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  height: 100vh;
 }
 
 .divMain {
@@ -98,6 +98,7 @@
   justify-content: center;
   width: 100%;
   padding: 25px;
+  background-size: cover;
   height: 500px;
   margin-bottom: 300px;
   background-color: var(--color-secondary-2);
@@ -150,6 +151,7 @@
   padding: 25px;
   height: 500px;
   background-color: var(--color-white);
+  margin-bottom: 130px;
 }
 
 .imgNotebookDiv {
@@ -181,4 +183,67 @@
     font-weight: bold;
     font-size: var(--font-size-6);
   }
+}
+
+/* plans section */
+
+.infosSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  img {
+    width: 1000px;
+  }
+}
+
+/* Scroll suave */
+
+/* Animação de texto */
+.h1Efecttext {
+  /* ... seus estilos existentes ... */
+  animation: colorChange 4s infinite; /* Animação de mudança de cor */
+}
+
+@keyframes colorChange {
+  0% {
+    color: var(--color-highlight-2);
+  }
+  50% {
+    color: var(--color-secondary-2);
+  }
+  100% {
+    color: var(--color-highlight-2);
+  }
+}
+
+/* Hover nos botões */
+button:hover {
+  transform: scale(1.05); /* Aumenta o tamanho em 5% */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+}
+
+/* @keyframes zoomAndBlurIn {
+  0% {
+    transform: scale(0.9) blur(5px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) blur(0);
+    opacity: 1;
+  }
+} */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.womanSection,
+.manSection {
+  animation: fadeIn 1s ease-in-out;
 }

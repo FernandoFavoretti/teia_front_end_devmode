@@ -1,6 +1,11 @@
 import styles from "./styles.module.scss";
 import addProfileImage from "../../assets/images/profile/add-profile.png";
-import { ButtonCyanCheck, ButtonOrangeCancel } from "../../components/buttons";
+import {
+  ButtonCancelProfile,
+  ButtonCyanCheck,
+  ButtonCyanCheckProfile,
+  ButtonOrangeCancel,
+} from "../../components/buttons";
 
 export const EditProfileModal = () => {
   return (
@@ -32,8 +37,8 @@ export const EditProfileModal = () => {
               />
             </div>
             <div className={styles.buttonsDiv}>
-              <ButtonCyanCheck />
-              <ButtonOrangeCancel />
+              <ButtonCyanCheckProfile children={undefined} />
+              <ButtonCancelProfile children={undefined} />
             </div>
           </div>
         </div>

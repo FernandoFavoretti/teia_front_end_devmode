@@ -3,7 +3,7 @@ import image2 from "../../../assets/images/teachingPlan/image2.png";
 import headerCardImg from "../../../assets/images/icons/white/idea.png";
 import {
   ButtonDownComplexity,
-  ButtonNext,
+  ButtonNextPage2,
   ButtonUpComplexity,
   ButtonUpload,
 } from "../../../components/buttons";
@@ -21,7 +21,7 @@ export const TeachingPlanModal2 = () => {
           <div className={styles.headerMain}>
             <h2 className={styles.h2}>Novo plano de aula</h2>
             <img src={image2} className={styles.image2} alt="" />
-            <ButtonNext />
+            <ButtonNextPage2 children={undefined} />
           </div>
           <div className={styles.contentMainDiv}>
             <div className={styles.titleDiv}>

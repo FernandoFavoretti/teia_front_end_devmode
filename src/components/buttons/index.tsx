@@ -11,52 +11,119 @@ import uploadImage from "../../assets/images/icons/white/upload.png";
 import upImage from "../../assets/images/icons/orange/upsign.png";
 import downImage from "../../assets/images/icons/cyan/downsign.png";
 import refreshImage from "../../assets/images/icons/white/refresh.png";
+import { useNavigate } from "react-router-dom";
 
 /* Landingpage */
 
-export const ButtonOrangeLandingPage = () => {
-  return <button className={styles.buttonOrangeLp}>Junte-se a nós</button>;
+export interface iUserProviderProps {
+  children: React.ReactNode;
+}
+
+export const ButtonOrangeLandingPage = ({}: iUserProviderProps) => {
+  const navigate = useNavigate();
+  return (
+    <button
+      className={styles.buttonOrangeLp}
+      onClick={() => navigate("/login")}
+    >
+      Junte-se a nós
+    </button>
+  );
 };
 
-export const ButtonWhiteLandingPage = () => {
-  return <button className={styles.buttonWhiteLp}>Comece agora!</button>;
+export const ButtonWhiteLandingPage = ({}: iUserProviderProps) => {
+  const navigate = useNavigate();
+  return (
+    <button className={styles.buttonWhiteLp} onClick={() => navigate("/login")}>
+      Comece agora!
+    </button>
+  );
 };
 
 /* Login */
 
-export const ButtonBlueLogin = () => {
-  return <button className={styles.buttonBlueLogin}>Entrar</button>;
+export const ButtonBlueLogin = ({}: iUserProviderProps) => {
+  const navigate = useNavigate();
+  return (
+    <button
+      className={styles.buttonBlueLogin}
+      onClick={() => navigate("/class")}
+    >
+      Entrar
+    </button>
+  );
 };
 
-export const ButtonOrangeLogin = () => {
+export const ButtonOrangeLogin = ({}: iUserProviderProps) => {
+  const navigate = useNavigate();
   return (
-    <button className={styles.buttonOrangeLoginRegister}>Cadastre-se</button>
+    <button
+      className={styles.buttonOrangeLoginRegister}
+      onClick={() => navigate("/register")}
+    >
+      Cadastre-se
+    </button>
   );
 };
 
 /* Register */
 
-export const ButtonOrangeRegister = () => {
+export const ButtonOrangeRegister = ({}: iUserProviderProps) => {
+  const navigate = useNavigate();
   return (
-    <button className={styles.buttonOrangeLoginRegister}>Cadastrar</button>
+    <button
+      className={styles.buttonOrangeLoginRegister}
+      onClick={() => navigate("/login")}
+    >
+      Cadastrar
+    </button>
   );
 };
 
 /* Profile */
 
-export const ButtonOrangeProfile = () => {
+export const ButtonOrangeProfile = ({}: iUserProviderProps) => {
+  const navigate = useNavigate();
   return (
-    <button className={styles.buttonOrange}>
+    <button
+      className={styles.buttonOrange}
+      onClick={() => navigate("/editProfile")}
+    >
       <img src={editImage} alt="" className={styles.imgButton} /> Editar perfil
+    </button>
+  );
+};
+
+export const ButtonCancelProfile = ({}: iUserProviderProps) => {
+  const navigate = useNavigate();
+  return (
+    <button
+      className={styles.buttonCancel}
+      onClick={() => navigate("/profile")}
+    >
+      <img src={calcelImage} alt="" className={styles.imgButton} /> Cancelar
+    </button>
+  );
+};
+
+export const ButtonCyanCheckProfile = ({}: iUserProviderProps) => {
+  const navigate = useNavigate();
+  return (
+    <button className={styles.buttonCyan} onClick={() => navigate("/profile")}>
+      <img src={checkImage} alt="" className={styles.imgButton} /> Finalizar
     </button>
   );
 };
 
 /* My classes */
 
-export const ButtonCyanNewPlan = () => {
+export const ButtonCyanNewPlan = ({}: iUserProviderProps) => {
+  const navigate = useNavigate();
   return (
-    <button className={styles.buttonCyan}>
+    <button
+      className={styles.buttonCyan}
+      onClick={() => navigate("/planModal1")}
+    >
       <img src={plusImage} alt="" className={styles.addButton} /> Novo plano de
       aula
     </button>
@@ -73,9 +140,10 @@ export const ButtonOrangeCancel = () => {
   );
 };
 
-export const ButtonCyanCheck = () => {
+export const ButtonCyanCheck = ({}: iUserProviderProps) => {
+  const navigate = useNavigate();
   return (
-    <button className={styles.buttonCyan}>
+    <button className={styles.buttonCyan} onClick={() => navigate("/class")}>
       <img src={checkImage} alt="" className={styles.imgButton} /> Finalizar
     </button>
   );
@@ -90,9 +158,13 @@ export const ButtonCleanFilter = () => {
   );
 };
 
-export const ButtonBack = () => {
+export const ButtonBack = ({}: iUserProviderProps) => {
+  const navigate = useNavigate();
   return (
-    <button className={styles.buttonBack}>
+    <button
+      className={styles.buttonBack}
+      onClick={() => navigate("/planModal2")}
+    >
       <img src={backImage} alt="" className={styles.backImage} /> Voltar
     </button>
   );
@@ -116,9 +188,25 @@ export const ButtonPrint = () => {
 
 /* New plan */
 
-export const ButtonNext = () => {
+export const ButtonNext = ({}: iUserProviderProps) => {
+  const navigate = useNavigate();
   return (
-    <button className={styles.buttonOrange}>
+    <button
+      className={styles.buttonOrange}
+      onClick={() => navigate("/planModal2")}
+    >
+      <img src={nextImage} alt="" className={styles.imgButton} /> Próximo
+    </button>
+  );
+};
+
+export const ButtonNextPage2 = ({}: iUserProviderProps) => {
+  const navigate = useNavigate();
+  return (
+    <button
+      className={styles.buttonOrange}
+      onClick={() => navigate("/planModal3")}
+    >
       <img src={nextImage} alt="" className={styles.imgButton} /> Próximo
     </button>
   );
@@ -148,9 +236,10 @@ export const ButtonGenerate = () => {
   );
 };
 
-export const ButtonCancel = () => {
+export const ButtonCancel = ({}: iUserProviderProps) => {
+  const navigate = useNavigate();
   return (
-    <button className={styles.buttonCancel}>
+    <button className={styles.buttonCancel} onClick={() => navigate("/class")}>
       <img src={calcelImage} alt="" className={styles.imgButton} /> Cancelar
     </button>
   );
@@ -187,6 +276,15 @@ export const ButtoRefresh = () => {
   return (
     <button className={styles.buttonCyan}>
       <img src={refreshImage} alt="" className={styles.imgButton} /> Atualizar
+    </button>
+  );
+};
+
+export const ButtonBackRender = ({}: iUserProviderProps) => {
+  const navigate = useNavigate();
+  return (
+    <button className={styles.buttonBack} onClick={() => navigate("/class")}>
+      <img src={backImage} alt="" className={styles.backImage} /> Voltar
     </button>
   );
 };

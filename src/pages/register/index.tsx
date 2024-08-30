@@ -13,14 +13,16 @@ export const RegisterPage = () => {
           <div className={styles.form}>
             <h3>Vamos</h3>
             <h3 className={styles.beginMargin}>começar!</h3>
-            <span className={styles.sideSpan}>Ainda não possui uma conta?</span>
+            <span className={styles.registerSpan}>
+              Ainda não possui uma conta?
+            </span>
             <ImputLogin />
             <div className={styles.buttonsDiv}>
               <ButtonOrangeRegister />
-              <span>ou continuar com</span>
+              <span className={styles.registerSpan}>ou continuar com</span>
               <div className={styles.accountDiv}>
                 <img src={googleImg} alt="" />
-                <span>ou</span>
+                <span className={styles.registerSpan}>ou</span>
                 <img src={appleImg} alt="" />
               </div>
             </div>

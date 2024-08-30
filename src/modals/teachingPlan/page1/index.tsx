@@ -20,9 +20,9 @@ export const TeachingPlanModal1 = () => {
           <div className={styles.headerMain}>
             <h2>Novo plano de aula</h2>
             <img src={image1} className={styles.image1} alt="" />
-            <ButtonNext />
+            <ButtonNext children={undefined} />
           </div>
-          <div className={styles.contentMainDiv}>
+          <div className={styles.contentMainDiv2}>
             <div className={styles.themeFilteredButtons}>
               <div className={styles.themeFilterDiv}>
                 <label htmlFor="" className={styles.label}>
@@ -62,7 +62,7 @@ export const TeachingPlanModal1 = () => {
               </div>
               <div className={styles.buttonsGenerate}>
                 <ButtonGenerate />
-                <ButtonCancel />
+                <ButtonCancel children={undefined} />
               </div>
             </div>
             <hr />

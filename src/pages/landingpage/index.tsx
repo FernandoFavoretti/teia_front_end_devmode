@@ -8,6 +8,7 @@ import {
   ButtonOrangeLandingPage,
   ButtonWhiteLandingPage,
 } from "../../components/buttons";
+import { Footer } from "../../components/footer";
 
 export const LandingPage = () => {
   return (
@@ -32,10 +33,9 @@ export const LandingPage = () => {
                   typesetting industry Ipsum is simply dummy text of the
                   printing and typesetting...
                 </p>
-                <ButtonOrangeLandingPage />
+                <ButtonOrangeLandingPage children={undefined} />
               </div>
             </div>
-            {/* <img src={lines1Img} alt="" /> */}
           </div>
           <div className={styles.manSection}>
             <div className={styles.textbutton}>
@@ -75,6 +75,7 @@ export const LandingPage = () => {
           </div>
           <div className={styles.footerSection}></div>
         </div>
+        <Footer />
       </div>
     </>
   );

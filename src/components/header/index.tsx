@@ -4,8 +4,14 @@ import beginningImage from "../../assets/images/icons/orange/beginning.png";
 import aboutUsImage from "../../assets/images/icons/orange/about-us.png";
 import loginImage from "../../assets/images/icons/orange/login.png";
 import settingsImage from "../../assets/images/icons/orange/settings.png";
+import { useNavigate } from "react-router-dom";
 
-export const Header = () => {
+export interface iUserProviderProps {
+  children: React.ReactNode;
+}
+
+export const Header = ({}: iUserProviderProps) => {
+  const navigate = useNavigate();
   return (
     <header>
       <div className={styles.header}>
@@ -28,7 +34,10 @@ export const Header = () => {
                 </button>
               </li>
               <li>
-                <button className={styles.buttonsMenu}>
+                <button
+                  className={styles.buttonsMenu}
+                  onClick={() => navigate("/login")}
+                >
                   <img src={loginImage} alt="" className={styles.menuImg} />
                   Login
                 </button>
