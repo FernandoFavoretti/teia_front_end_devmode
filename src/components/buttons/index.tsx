@@ -12,12 +12,9 @@ import upImage from "../../assets/images/icons/orange/upsign.png";
 import downImage from "../../assets/images/icons/cyan/downsign.png";
 import refreshImage from "../../assets/images/icons/white/refresh.png";
 import { useNavigate } from "react-router-dom";
+import { iUserProviderProps } from "../../interfaces";
 
 /* Landingpage */
-
-export interface iUserProviderProps {
-  children: React.ReactNode;
-}
 
 export const ButtonOrangeLandingPage = ({}: iUserProviderProps) => {
   const navigate = useNavigate();
@@ -109,7 +106,7 @@ export const ButtonCancelProfile = ({}: iUserProviderProps) => {
 export const ButtonCyanCheckProfile = ({}: iUserProviderProps) => {
   const navigate = useNavigate();
   return (
-    <button className={styles.buttonCyan} onClick={() => navigate("/profile")}>
+    <button className={styles.buttonCyan} onClick={() => navigate("/class")}>
       <img src={checkImage} alt="" className={styles.imgButton} /> Finalizar
     </button>
   );

@@ -9,7 +9,6 @@ import headerCardImg from "../../../assets/images/icons/white/idea.png";
 import {
   ButtonBack,
   ButtonCyanCheck,
-  ButtonNext,
   ButtonRemake,
   ButtoRefresh,
 } from "../../../components/buttons";
@@ -24,8 +23,8 @@ export const TeachingPlanModal3 = () => {
             <h2 className={styles.h2}>Novo plano de aula</h2>
             <img src={image3} className={styles.image3} alt="" />
             <div className={styles.buttonsHeaderDiv}>
-              <ButtonBack />
-              <ButtonCyanCheck />
+              <ButtonBack children={undefined} />
+              <ButtonCyanCheck children={undefined} />
             </div>
           </div>
           <div className={styles.contentMainDiv}>

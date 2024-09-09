@@ -5,10 +5,7 @@ import aboutUsImage from "../../assets/images/icons/orange/about-us.png";
 import loginImage from "../../assets/images/icons/orange/login.png";
 import settingsImage from "../../assets/images/icons/orange/settings.png";
 import { useNavigate } from "react-router-dom";
-
-export interface iUserProviderProps {
-  children: React.ReactNode;
-}
+import { iUserProviderProps } from "../../interfaces";
 
 export const Header = ({}: iUserProviderProps) => {
   const navigate = useNavigate();

@@ -7,7 +7,7 @@ import visibilityImg from "../../assets/images/icons/white/visibility.png";
 import visibilityImgGrey from "../../assets/images/icons/grey/visibility.png";
 import forestImg from "../../assets/images/cards/amazonia-photo.png";
 import rebecaImg from "../../assets/images/cards/rebeca-andrade.png";
-import { iUserProviderProps } from "../header";
+import { iUserProviderProps } from "../../interfaces";
 import { useNavigate } from "react-router-dom";
 
 export const CardsClass = ({}: iUserProviderProps) => {

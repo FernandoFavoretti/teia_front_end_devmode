@@ -4,7 +4,7 @@ import beginningImage from "../../assets/images/icons/orange/beginning.png";
 import myClassesImage from "../../assets/images/icons/orange/my-classes.png";
 import profileImage from "../../assets/images/icons/orange/profile.png";
 import settingsImage from "../../assets/images/icons/orange/settings.png";
-import { iUserProviderProps } from "../header";
+import { iUserProviderProps } from "../../interfaces/index";
 import { useNavigate } from "react-router-dom";
 
 export const SideMenu = ({}: iUserProviderProps) => {
