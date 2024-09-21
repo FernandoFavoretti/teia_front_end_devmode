@@ -13,8 +13,14 @@ import downImage from "../../assets/images/icons/cyan/downsign.png";
 import refreshImage from "../../assets/images/icons/white/refresh.png";
 import { useNavigate } from "react-router-dom";
 import { iUserProviderProps } from "../../interfaces";
+import { postTeachingPlan } from "../../services/ai_rest_functions";
+import React, { useState } from 'react';
+
 
 /* Landingpage */
+interface ButtonGenerateProps {
+  onClick: () => void;
+}
 
 export const ButtonOrangeLandingPage = ({}: iUserProviderProps) => {
   const navigate = useNavigate();
@@ -225,9 +231,9 @@ export const ButtonUpload = () => {
   );
 };
 
-export const ButtonGenerate = () => {
+export const ButtonGenerate: React.FC<ButtonGenerateProps> = ({ onClick }) => {
   return (
-    <button className={styles.buttonGenerate}>
+    <button className={styles.buttonGenerate} onClick={onClick}>
       <img src={checkImage} alt="" className={styles.imgButton} /> Gerar
     </button>
   );

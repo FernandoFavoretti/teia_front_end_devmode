@@ -1,7 +1,9 @@
+import React, { useState } from 'react';
 import styles from "../page1/styles.module.scss";
 import image1 from "../../../assets/images/teachingPlan/image1.png";
 import editImg from "../../../assets/images/icons/grey/edit.png";
 import deleteImg from "../../../assets/images/icons/grey/trash.png";
+import { postTeachingPlan } from "../../../services/ai_rest_functions";
 
 import {
   ButtonAddContext,
@@ -12,6 +14,22 @@ import {
 } from "../../../components/buttons";
 
 export const TeachingPlanModal1 = () => {
+  const [context, setContext] = useState('');
+  const [disciplina, setDisciplina] = useState('');
+  const [escolaridade, setEscolaridade] = useState('');
+  const [apiResponse, setApiResponse] = useState(null);
+
+  const handleGenerateClick = async () => {
+    try {
+      const data = await postTeachingPlan(context, disciplina, escolaridade);
+      setApiResponse(data);
+      console.log(data); // Faça algo com a resposta da API
+    } catch (error) {
+      console.error("Erro ao fazer a chamada à API:", error);
+    }
+  };
+
+
   return (
     <>
       <div className={styles.fade}></div>
@@ -33,26 +51,37 @@ export const TeachingPlanModal1 = () => {
                   className={styles.themeContextArea}
                   id=""
                   placeholder="Escreva um tema ou contexto aqui"
+                  onChange={(e) => setContext(e.target.value)}
                 ></textarea>
                 <div className={styles.filterDiv}>
                   <div className={styles.filter}>
                     <label htmlFor="" className={styles.label}>
                       Filtrar:
                     </label>
-                    <select name="disciplina" className={styles.select} id="">
+                    <select
+                     name="disciplina"
+                     className={styles.select}
+                     id=""
+                     onChange={(e) => setDisciplina(e.target.value)}
+                     >
                       <option value="" disabled selected>
                         Disciplina
                       </option>
-                      <option value="valor1">Biologia</option>
-                      <option value="valor1">Física</option>
-                      <option value="valor1">Artes</option>
+                      <option value="biologia">Biologia</option>
+                      <option value="fisica">Física</option>
+                      <option value="historia">História</option>
+                      <option value="geografia">Geografia</option>
                     </select>
-                    <select name="disciplina" className={styles.select} id="">
+                    <select 
+                      name="anoescolaridade"
+                      className={styles.select}
+                      id=""
+                      onChange={(e) => setEscolaridade(e.target.value)}>
                       <option value="" disabled selected>
                         Ano | Escolaridade
                       </option>
-                      <option value="valor1">Biologia</option>
-                      <option value="valor1">Física</option>
+                      <option value="Biologia">Biologia</option>
+                      <option value="Fisica">Física</option>
                       <option value="valor1">Artes</option>
                     </select>
                     <ButtonAddContext />
@@ -61,7 +90,7 @@ export const TeachingPlanModal1 = () => {
                 </div>
               </div>
               <div className={styles.buttonsGenerate}>
-                <ButtonGenerate />
+                <ButtonGenerate onClick={handleGenerateClick}/>
                 <ButtonCancel children={undefined} />
               </div>
             </div>
