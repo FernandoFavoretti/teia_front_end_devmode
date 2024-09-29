@@ -7,7 +7,7 @@ export const UserContext = createContext({} as iUserProviderValues);
 export const UserProvider = ({
   children,
 }: React.PropsWithChildren): JSX.Element => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return <UserContext.Provider value={{}}>{children}</UserContext.Provider>;
 };

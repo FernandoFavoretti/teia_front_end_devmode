@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from "../page1/styles.module.scss";
 import image1 from "../../../assets/images/teachingPlan/image1.png";
 import editImg from "../../../assets/images/icons/grey/edit.png";
@@ -17,7 +17,7 @@ export const TeachingPlanModal1 = () => {
   const [context, setContext] = useState('');
   const [disciplina, setDisciplina] = useState('');
   const [escolaridade, setEscolaridade] = useState('');
-  const [apiResponse, setApiResponse] = useState(null);
+  // const [apiResponse, setApiResponse] = useState(null);
 
   const handleGenerateClick = async () => {
     try {
@@ -158,3 +158,7 @@ export const TeachingPlanModal1 = () => {
     </>
   );
 };
+function setApiResponse(data: any) {
+  throw new Error('Function not implemented.');
+}
+

@@ -18,12 +18,15 @@ const login = async () => {
 
 export const postTeachingPlan = async (context: string, disciplina: string, escolaridade: string) => {
     try {
-        // const token = await login(); // Await the login function to get the token
         const token = await login();
         if (!token) {
             console.error('No token available');
             return;
         }
+        console.log(context)
+        console.log(disciplina)
+        console.log(escolaridade)
+
 
         const response = await fetch('https://course-gen-backend-1004053150890.us-central1.run.app/health', {
             method: 'GET', // Specify the method as POST

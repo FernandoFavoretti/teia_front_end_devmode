@@ -13,7 +13,7 @@ import { Footer } from "../../components/footer";
 export const LandingPage = () => {
   return (
     <>
-      <Header />
+      <Header children={undefined} />
       <div className={styles.divBody}>
         <div className={styles.divMain}>
           <div className={styles.womanSection}>

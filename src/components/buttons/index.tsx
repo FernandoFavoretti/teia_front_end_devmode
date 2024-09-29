@@ -13,8 +13,6 @@ import downImage from "../../assets/images/icons/cyan/downsign.png";
 import refreshImage from "../../assets/images/icons/white/refresh.png";
 import { useNavigate } from "react-router-dom";
 import { iUserProviderProps } from "../../interfaces";
-import { postTeachingPlan } from "../../services/ai_rest_functions";
-import React, { useState } from 'react';
 
 
 /* Landingpage */
